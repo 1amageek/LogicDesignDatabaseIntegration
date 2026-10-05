@@ -26,10 +26,7 @@ let package = Package(
             named: "CircuiteFoundation",
             exactVersion: "26.812.0"
         ),
-        releasedDependency(
-            named: "DesignDatabase",
-            exactVersion: "26.812.1"
-        ),
+        .package(url: "https://github.com/1amageek/DesignDatabase.git", revision: "78f1c2e28e804e7c750014827e9f18c88c2272e3"),
         releasedDependency(
             named: "LogicDesign",
             exactVersion: "26.812.0"
