@@ -22,15 +22,9 @@ let package = Package(
         ),
     ],
     dependencies: [
-        releasedDependency(
-            named: "CircuiteFoundation",
-            exactVersion: "26.812.0"
-        ),
+        .package(url: "https://github.com/1amageek/CircuiteFoundation.git", revision: "ae88104c556f5802819713ed741f5b2fffffc2d9"),
         .package(url: "https://github.com/1amageek/DesignDatabase.git", revision: "11df4ff7d905d642b5935defb3bc1fbcfefda038"),
-        releasedDependency(
-            named: "LogicDesign",
-            exactVersion: "26.812.0"
-        ),
+        .package(url: "https://github.com/1amageek/LogicDesign.git", revision: "d13cebf1454e124a352f87186a22a70ef47d99a5"),
         .package(
             url: "https://github.com/1amageek/database-kit.git",
             exact: "26.0809.4"
